@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var age = [12,1,33,44,21,3,2,5,16,17,18,99,88]
+        for(var num in age){
+            if(age.hasOwnProperty(num)){
+                console.log("这个是存在于age数组中"+num)
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var age = [12,1,33,44,21,3,2,5,16,17,18,99,88]
+        // age.forEach(function(i){
+        //     if(i < 20){
+        //         console.log("这个值小于20:",+i)
+        //     }else if(i>20 && i<50){
+        //         console.log("这个值大于20小于50:",+i)
+        //     }else{
+        //         console.log("这个值大于50:",+i)
+        //     }
+        // })
+
+        // for 开始循环
+        // i = 0 初始化值
+        // i<100 条件
+        // i++ 执行一次 加一次
+        // for( let i = 0 ; i < 100; i++){
+        //     console.log("第",i,"运行for循环")
+        // }
+
+
+        // var age = 10 ;
+        //如果这个条件成立才会执行下面的方法
+        // while(age < 9) {
+        //     age = age + 1;
+        //     console.log(age,"岁")
+        // }
+
+        // var x = "",i = 1;
+        // do {
+        //     x = x +"该数字为："+i;
+        //     i++;
+        //     console.log(x)
+        // } while(i=0)
+        //先执行上面的方法 ，然后在执行条件，不管条件是否成立都会最低执行一次
+    //     var age = 7;
+    //     if( age <= 3){
+    //         console.log("是个三岁小孩")
+    //     } else if( age > 3 && age < 6){
+    //         console.log("要上幼儿园了")
+    //     }else{
+    //         console.log("都六岁了还不上小学")
+    // }
+    </script>
+</body>
+</html>
