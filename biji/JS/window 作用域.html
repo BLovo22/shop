@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = "colddd"
+        alert(x)
+        //window
+        window.alert(x)
+
+        var old_alert = window.alert;
+        window.alert = function (){
+
+        };
+        //失效了
+        window.alert("123123123")
+        window.alert=old_alert;
+        //恢复
+        window.alert("121332425")
+    </script>
+</body>
+</html>

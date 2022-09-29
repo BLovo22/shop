@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function yc(){
+            var x = 1;
+            x = x+2;
+            console.log(x)
+        }
+        yc();
+        //变量一定要写在作用域里面否则报错。
+        function yc1(){
+            var x = 1;
+            x = x+2;
+            console.log(x)
+        }
+        yc1();
+
+       function yc2(){
+
+        var x = 1;
+
+        function yc3(){
+
+            var y = x + 1;
+
+            console.log(y)
+        }
+        yc3();
+        // var z = y + 1; //报错
+        // console.log(z)
+       }
+       yc2(); 
+
+
+       function yc4(){
+        var x = 1;
+        function yc5(){
+            var x = "A"
+            console.log(x,"内部的")
+        }
+        yc5();
+        console.log(x,"外部的")
+       }
+       yc4();
+
+
+       function yc6(){
+            var y;
+            var x = 'x'+y;
+            console.log( x)
+            //如果没有定义y的话就会提示，y is not defined
+            var y ='y'
+            //如果定义了机会提示 undefined
+        }
+        yc6();
+            //把要用到的函数都放到开头
+        function yc7(){
+            var y = "y";
+            var x = "x" + y;
+            console.log(x)
+            var z,i,o;//undefined
+        }
+        yc7();
+    </script>
+</body>
+</html>
