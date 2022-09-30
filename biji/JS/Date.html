@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var now = new Date();
+        now.getFullYear();//年
+        now.getMonth();//月份
+        now.getDate();//日
+        now.getDay();//星期几
+        now.getHours();//时间
+        now.getMinutes();//分钟
+        now.getSeconds();//秒
+        now.getTime();//时间戳 毫秒值
+        new Date(1664532273706)
+     //Fri Sep 30 2022 18:04:33 GMT+0800 (GMT+08:00)
+
+     now.toLocaleDateString();//获取本机时间
+     //'2022/9/30'
+     now.toGMTString();
+     //'Fri, 30 Sep 2022 10:04:33 GMT'
+    </script>
+</body>
+</html>

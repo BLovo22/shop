@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {
+            name:"cold",
+            age:18,
+            run:function(){
+                console.log(this.name + "正在敲代码.....")
+            }
+        };
+        var cold = {
+            name:'coldd'
+        }
+        //原型对象
+        //cold 的原型就是student
+        cold.__proto__ = student;
+         var xiaoniao = {
+            // name:'coldd',
+            youyong:function(){
+                console.log(this.name +"正在游泳.....")
+            }
+         }
+
+         
+    </script>
+</body>
+</html>

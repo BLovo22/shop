@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义js对象
+        var user = {
+            name:"cold",
+            age:"18",
+            sex:"男"
+        }
+        //对象转为JSON类型
+        var jsonUser = JSON.stringify(user);
+        '{"name":"cold","age":"18","sex":"男"}'
+        //json类型转换为对象
+        var obj = JSON.parse(jsonUser);
+    </script>
+</body>
+</html>

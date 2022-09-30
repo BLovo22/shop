@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义一个类
+        class student1{
+            constructor(name){
+                this.name = name;
+            }
+            hello(){
+                alert('hello')
+            }
+        }
+         
+
+        class student2 extends student1{
+            constructor (name,age){
+                super(name)
+                this.age = age;
+            }
+         daxuesheng(){
+            alert('我是一个大学生')
+         }
+        }
+
+     var cold = new student1("coldd666")
+     //cold.hello()
+     var cold1 = new student2("coldd666",22)
+
+    </script>
+</body>
+</html>
