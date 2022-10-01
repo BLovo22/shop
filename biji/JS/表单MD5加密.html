@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.js"></script>
+</head>
+<body>
+    <form action="post">
+        <p>
+            <span>用户名</span><input type="text" id="username" name="username">
+        </p>
+        <p>
+           <span>密码</span><input type="password" id="password"name="password">
+        </p>
+        <button onclick="abc()">提交</button>
+    </form>
+    <script>
+        function abc(){
+            alert('1')
+            var input_text = document.getElementById('username');
+            var password = document.getElementById('password');
+            alert(password.value)
+            password.value = md5(password.value)
+            alert(password.value)
+        }
+    </script>
+</body>
+</html>

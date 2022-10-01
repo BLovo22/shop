@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+        <p>
+            <span>用户名</span><input type="text" id="username">
+        </p>
+        <p>
+            <!-- 单选框 -->
+            <span>性别</span>
+            
+            <input type="radio" name="sex" value="man" id="boy">男
+            <input type="radio" name="sex" value="women" id="girl">女
+        </p>
+    </form>
+    <script>
+        var input_text = document.getElementById('username');
+        var boy = document.getElementById('boy');
+        var girl = document.getElementById('girl');
+
+
+        //得到输入框的值
+        input_text.value 
+        //修改输入框的值
+        input_text.value = '12233333'
+
+        //对于单选框  多选框 等固定的值  boy.value 只能获得当前的值
+        boy.checked //查看返回的结果是否为true 如果为 true就是被选中了
+        boy.checked = 'true' //赋值
+    </script>
+</body>
+</html>
