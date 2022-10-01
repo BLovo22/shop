@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 获取鼠标当前的坐标 -->
+    mouse: <span id="mouseMove"></span>
+    <div id="divMove">
+        在这里移动
+    </div>
+
+    <script>
+        //当网页元素 加载完毕以后 响应事件
+        $(function(){
+            $('#divMove').mousemove(function(e){
+                $('#mouseMove').text('x:'+e.pageX + 'y:' + e.pageY)
+            })
+        })
+    </script>
+</body>
+</html>
