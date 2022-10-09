@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .nav li 权重是11 */
+        .nav li {
+            color: red;
+        }
+
+        /* 继承的权重是0 */
+        /* .pink权重是10 .nav权重是10  权重20 */
+        .nav .pink {
+            color: pink;
+            font-weight: 700;
+        }
+    </style>
+    <!-- 把第一个li设置粉色并加粗 -->
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="pink">冰凉冰凉冰凉</li>
+        <li>冰凉冰凉冰凉</li>
+        <li>冰凉冰凉冰凉</li>
+        <li>冰凉冰凉冰凉</li>
+        <li>冰凉冰凉冰凉</li>
+    </ul>
+</body>
+
+</html>

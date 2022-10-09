@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子选择器需要用父级后面带大于号>然后选择离他最近的一个子元素，其他的不会更改 适用于一个盒子里有相同的标签  */
+        .nav>a {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">我是子</a>
+        <p>
+            <a href="#">我是孙</a>
+        </p>
+    </div>
+</body>
+
+</html>

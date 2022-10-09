@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 行高继承 子元素会继承父元素的样式 行高可以不带px 1.5代表1.5倍 */
+            font: 12px/1.5 Microsoft YeHei;
+            color: pink;
+        }
+
+        div {
+            /* 因为body 的倍数是1.5 所以文字大小是 1.5*15=22.5  */
+            font-size: 15px;
+        }
+
+        p {
+            /* 1.5*18=27 */
+            font-size: 18px;
+        }
+
+        /* ul我没有设置元素，但是会继承父元素body的样式 */
+    </style>
+</head>
+
+<body>
+    <div>jim吉姆吉姆</div>
+    <p>jim吉姆吉姆</p>
+    <ul>
+        <li>jimijim
+        </li>
+    </ul>
+</body>
+
+</html>

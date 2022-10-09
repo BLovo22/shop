@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 为确保正常显示 顺序不能打乱 ：link-:visited -:hover -:active LVHA 这个顺序 */
+        /*   a：link 把没有访问过的链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* a:visited 选中所有访问过的链接 */
+        a:visited {
+            color: blue;
+        }
+
+        /* a:hover 选择鼠标经过的那个链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* a:active 选择鼠标点击了还未松开的链接 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">狗JIM</a>
+</body>
+
+</html>

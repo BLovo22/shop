@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuanxing {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px; */
+            /* 用radius 画圆 要定义宽度的一半  单位可以用px 和百分号 百分号更简单*/
+            border-radius: 50%;
+        }
+
+        .jvxing {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 圆角矩形 要定义高度的一半  */
+            border-radius: 50px
+        }
+
+        .radius {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 10px 20px 30px 40px; */
+            border-radius: 10px 40px;
+            /* 对角 */
+            /* border-top-left-radius: 10px;    左上角 */
+            /* border-top-right-radius: 10px;    右上角 */
+            /* border-bottom-left-radius: 10px;  左下角 */
+            /* border-bottom-right-radius: 10px;
+            右下角 */
+        }
+    </style>
+</head>
+
+<body>
+    1.用圆角边框画一个圆形
+    <div class="yuanxing"></div>
+    2.矩形
+    <div class="jvxing"></div>
+    3.四个角都可以定义
+    <div class="radius"></div>
+</body>
+
+</html>

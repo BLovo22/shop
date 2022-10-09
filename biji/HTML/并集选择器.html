@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 并集选择器可以选择多组标签同时改变他们的样式 */
+        /* 选择div p span 标签改变了颜色 */
+        div,
+        p,
+        span {
+            color: pink;
+        }
+
+        /* 选择ul里面的li更改了颜色 最后一组不需要加逗号*/
+        .lol,
+        li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>亚索</div>
+    <p>盖伦</p>
+    <span>琪亚娜</span>
+    <ul class="lol">
+        <li>郭经伟</li>
+        <li>张晋华</li>
+        <li>林广军</li>
+        <li>马晋彪</li>
+    </ul>
+</body>
+
+</html>
