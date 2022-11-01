@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <span>{{mag}} hahahahahahah</span> <br>
+
+       <span v-text="mag">hahahahahaha</span><br>
+        <span v-html="mag"></span><br>
+    </div>
+</body>
+</html>
+<script src="../lib/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            mag:"<a href='#'>点击跳转</a>",
+
+        }
+    })
+</script>

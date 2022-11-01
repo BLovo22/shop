@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <h2>年龄{{age}}岁</h2>
+        <input type="button" name="" id="" value="点我增加数字" v-on:click="chufa">
+    </div>
+</body>
+</html>
+<script src="../lib/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            msg:"cold",
+            age:17
+        },
+        methods:{//方法必须定义在这个里面
+            chufa:function(){
+                this.age++
+                this.tixing();
+
+            },
+            tixing:function(){
+                console.log("增加成功")
+            }
+
+        }
+    })
+</script>

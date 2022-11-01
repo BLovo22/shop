@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>
+            {{msg}}
+        </h1>
+        <h1>
+            {{count}}
+        </h1>
+        <h1>{{user.id}}======={{user.name}}======={{user.age}}</h1>
+        <h1>{{diqv[0]}}</h1>
+        <h1>{{userlist[0].id}}====={{userlist[0].name}}======{{userlist[2].age}}</h1>
+    </div>
+</body>
+</html>
+<script src="../lib/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            msg:"hello vue",
+            count:0,
+            user:{id:001,name:"cold",age:19},
+            diqv:["北京","上海","广州"],
+            userlist:[
+            {id:001,name:"cold",age:19},
+            {id:002,name:"cold1",age:18},
+            {id:003,name:"cold2",age:17},
+            ]
+
+        }
+    })
+</script>
