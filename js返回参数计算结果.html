@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        输入半径：<input type="text" name="radius" id="radius">
+        <input type="button" name="" id="" value="计算" onclick="show()">
+        <br>
+        圆的面积：<input type="text" name="area" id="area" readonly>
+    </form>
+</body>
+<script>
+    var pi = 3.14;
+    function compute(radius){
+        var area = 0;
+        area = pi*radius*radius;
+        return area
+    }
+    function show () {
+        var radius = document.getElementById('radius').value;
+        var area = compute(radius);
+        document.getElementById('area').value = area;
+        return
+    }
+</script>
+</html>

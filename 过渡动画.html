@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+           background-color: red;
+           height: 200px;
+           width: 200px;
+         /*  指定动画过渡的css属性*/
+         transition: background-color 2s ease-in-out 3s;
+                                     /* 此时动画会在3秒后执行 */
+         -moz-transition: background-color 2s ease-in-out 3s;
+         -o-transition: background-color 2s ease-in-out 3s;
+         -webkit-transition: background-color 2s ease-in-out 3s;
+        }
+        div:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <div></div>
+</body>
+</html>
