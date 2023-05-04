@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+<img width="300"  v-bind:src="imgs" alt="">
+
+<br>
+<br>
+<br>
+<br>
+
+<input type="button" value="点击切换图片" @click="gaibiantupian">
+<input type="button" value="点击切换图片" @click="gaibiantupian1">
+    </div>
+</body>
+</html>
+<script src="../lib/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            //用来vue实例定义一系列数据
+            imgs:'../img/jaychou.jpg'
+        },
+        methods:{
+            gaibiantupian(){
+                this.imgs = '../img/shuimu.png'
+            },
+            gaibiantupian1(){
+                this.imgs = '../img/jaychou.jpg'
+            }
+
+        }
+    })
+</script>
